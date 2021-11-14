@@ -34,32 +34,6 @@
                     <a href="" class="p-3">Logout</a>
                 </li>
             </ul>
-            {{-- <ul class="flex items-center">
-                <li>
-                    <a href="" class="p-3">Duarte Cancela</>
-                </li>
-                <li>
-                    <a href="" class="p-3">Login</>
-                </li>
-                <li>
-                    <a href="" class="p-3">posts</>
-                </li>
-            </ul>
-
-            <ul class="flex items-center">
-                <li>
-                    <a href="" class="p-3">Duarte Cancela</>
-                </li>
-                <li>
-                    <a href="" class="p-3">Login</>
-                </li>
-                <li>
-                    <a href="{{ route('register')}}" class="p-3">Register</>
-                </li>
-                <li>
-                    <a href="" class="p-3">Logout</>
-                </li>
-            </ul> --}}
         </nav>
         @yield('content')
     </body>
