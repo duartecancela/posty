@@ -21,18 +21,21 @@
                 </li>
             </ul>
             <ul class="flex items-center">
-                <li class="flex items-center">
-                    <a href="" class="p-3">Duarte Cancela</a>
-                </li>
-                <li class="flex items-center">
-                    <a href="" class="p-3">Login</a>
-                </li>
-                <li class="flex items-center">
-                    <a href="{{ route('register') }}" class="p-3">Register</a>
-                </li>
-                <li class="flex items-center">
-                    <a href="" class="p-3">Logout</a>
-                </li>
+                @if (auth()->user())
+                    <li class="flex items-center">
+                        <a href="" class="p-3">Duarte Cancela</a>
+                    </li>
+                    <li class="flex items-center">
+                        <a href="" class="p-3">Logout</a>
+                    </li>
+                @else
+                    <li class="flex items-center">
+                        <a href="" class="p-3">Login</a>
+                    </li>
+                    <li class="flex items-center">
+                        <a href="{{ route('register') }}" class="p-3">Register</a>
+                    </li>
+                @endif
             </ul>
         </nav>
         @yield('content')
